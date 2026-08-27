@@ -220,7 +220,7 @@ unicode_value    = {unicode_char} /*| {little_u_value} | {big_u_value} | {escape
             { return REL_OP; }
     "+" | "-"
             { return ADD_OP; }
-    "*" | "/" | "div" | "mod" | "quo" | "rem"
+    "*" | "/"
             { return MUL_OP; }
     "|"     { return OP_DISJUNCTION; }
     "&"     { return OP_UNIFICATION; }
@@ -238,7 +238,11 @@ unicode_value    = {unicode_char} /*| {little_u_value} | {big_u_value} | {escape
     "len"
    | "close"
    | "and"
-   | "or"   { return IDENTIFIER_PREDECLARED; }
+   | "or"
+   | "div"
+   | "mod"
+   | "quo"
+   | "rem"  { return IDENTIFIER_PREDECLARED; }
 
     // types
     // null is also a null_lit
