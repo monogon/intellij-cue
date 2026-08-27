@@ -232,7 +232,7 @@ private binary_op  ::= OP_DISJUNCTION | OP_OR | OP_AND | OP_EQ | rel_op | add_op
 private rel_op     ::= REL_OP
 //"+" | "-"
 private add_op     ::= ADD_OP
-//"*" | "/" | "div" | "mod" | "quo" | "rem"
+//"*" | "/"
 private mul_op     ::= MUL_OP
 // "+" | "-" | "!" | "*" | rel_op
 private unary_op   ::= ADD_OP | EXCL | "*" | rel_op
